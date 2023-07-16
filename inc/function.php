@@ -176,5 +176,3 @@ function sfy_add_my_cron_event(): void {
 
 add_action('wp', 'sfy_add_my_cron_event');
 add_action('sfy_hourly_event', 'start_synchronizer_callback');
-
-//wp_clear_scheduled_hook('sfy_hourly_event');

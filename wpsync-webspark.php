@@ -27,7 +27,7 @@ function goods_synchronizer_install () {
 }
 
 function goods_synchronizer_deactivation () {
-    /*unregister function*/
+    wp_clear_scheduled_hook('sfy_hourly_event');
 }
 
 function goods_synchronizer_delete () {
